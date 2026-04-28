@@ -3,8 +3,8 @@ import { Grid, Paper, Typography, Box, Dialog, IconButton } from "@mui/material"
 import CloseIcon from '@mui/icons-material/Close';
 
 const IMAGES = [
-  { id: 1, src: "/assets/infografis-indonesia.png", alt: "Infografis Bahasa Indonesia" },
-  { id: 2, src: "/assets/infografis-matematika.png", alt: "Infografis Matematika" },
+  { id: 1, src: "/assets/brenana.png", alt: "Brenana" },
+  { id: 2, src: "/assets/frenana.png", alt: "Frenana" },
 ];
 
 export default function Attachments() {
@@ -23,14 +23,14 @@ export default function Attachments() {
 
   return (
     <>
-      <Typography variant="h5" fontWeight={600} gutterBottom>
-        Lampiran
+      <Typography variant="h4" fontWeight={600} gutterBottom>
+        Our Products!
       </Typography>
       <Typography variant="body2" color="text.secondary" mb={2}>
         Tekan untuk melihat lebih besar.
       </Typography>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ justifyContent: "center" }}>
         {IMAGES.map((img) => (
           <Grid item xs={12} sm={6} md={4} key={img.id}>
             <Paper

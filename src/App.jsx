@@ -4,10 +4,11 @@ import theme from "./components/Theme";
 import Header from "./components/Headerr";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Attachments from "./pages/Attachments";
+import Products from "./pages/Products";
+import Inovasi from "./pages/Inovasi";
+import Bio from "./pages/Bio";
+import Kim from "./pages/Kim";
 import { Container, Box, ThemeProvider } from "@mui/material";
-
 
 export default function App() {
   return (
@@ -18,8 +19,10 @@ export default function App() {
         <Container sx={{ flex: 1, py: 4 }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/attachments" element={<Attachments />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/inovasi" element={<Inovasi />} />
+            <Route path="/bio" element={<Bio />} />
+            <Route path="/kim" element={<Kim />} />
           </Routes>
         </Container>
         <Footer />

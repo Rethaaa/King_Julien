@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
 
 body {
@@ -21,6 +22,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+* {
+  font-family: 'Nunito', sans-serif;
 }
 
 /* @media (prefers-color-scheme: light) {

@@ -1,20 +1,22 @@
 import { createTheme } from "@mui/material/styles";
+import '@fontsource/nunito/300.css';
 
 const theme = createTheme({
+  typography: {
+    fontFamily: '"Nunito", Nunito, Arial',
+  },
   palette: {
     primary: {
-      main: "#259b24",
+      main: "#F06197",
     },
     secondary: {
-      main: "#8bc34a",
-      text: "fff",
+      main: "#73B432",
     },
     tertiary: {
-      main: "#00bcd4",
+      main: "#E8BE34",
     },
     quaternary: {
-      main: "#03a9f4",
-      dark: "#0288d1",
+      main: "#c4f3ff",
     },
     background: {
       default: "#f5f5f5",
